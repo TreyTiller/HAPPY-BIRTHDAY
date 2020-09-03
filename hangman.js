@@ -63,7 +63,7 @@ var Hangman = (function () {
             this.showElementByIdWithContent(this.elId + "_" + this.MISTAKES, null);
             // Check if its Game Over
             if (this.MISTAKES === 6) {
-                this.showElementByIdWithContent(this.elId + "_end", "GAME OVER!<br/>The word was: " + this.WORD);
+                this.showElementByIdWithContent(this.elId + "_end", "GAME OVER!");
                 this.STOPPED = true;
             }
         } else if (this.WORD.indexOf(this.getGuessedfWord()) !== -1) {
